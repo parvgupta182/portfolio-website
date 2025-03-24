@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio - Pawan Kumavat</title>
+    <title>Personal Portfolio - Parv Gupta</title>
 
     <!-- bootstrap css cdn link  -->
     <link
@@ -39,6 +39,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   </head>
   <body>
+    <div class="full-body">
     <!-- navbar starts -->
     <nav
       id="navbar-top"
@@ -74,11 +75,11 @@
               <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#testimonial">Testimonials</a>
+              <a class="nav-link" href="#testimonial">Projects</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#blog">Blog</a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
@@ -92,10 +93,10 @@
         <!-- here data-aos is used for adding aos animation  -->
         <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
           <h2 style="color: #3f396d">
-            Hello! I Am <br /><span class="c-orange">Pawan Kumavat</span>
+            Hello! I Am <br /><span class="c-orange">Parv Gupta</span>
           </h2>
           <p class="text-muted">
-            I'm A Web Developer having 5 years of experience in expertise of
+            I'm A Web Developer having expertise in
             creating website with fully responsive Also with backend part too.
           </p>
           <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
@@ -104,7 +105,7 @@
           <a href="" class="link ms-4 d-none">See My Work</a>
         </div>
         <div class="col-10 col-md-4 d-none d-md-block">
-          <img src="images/banner-01.webp" class="img-fluid" alt="" />
+          <img src="" class="img-fluid" alt="" />
         </div>
       </div>
     </section>
@@ -132,10 +133,9 @@
             <div class="content mt-3">
               <h4>Web Design</h4>
               <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum neces aibus minima veniam.
+                
               </p>
-              <a href="" class="link">Read More</a>
+              <a href="" class="link"></a>
             </div>
           </div>
         </div>
@@ -151,10 +151,9 @@
             <div class="content mt-3">
               <h4>Web Development</h4>
               <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum neces aibus minima veniam.
+                
               </p>
-              <a href="" class="link">Read More</a>
+              <a href="" class="link"></a>
             </div>
           </div>
         </div>
@@ -170,10 +169,9 @@
             <div class="content mt-3">
               <h4>Debugging</h4>
               <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum neces aibus minima veniam.
+                
               </p>
-              <a href="" class="link">Read More</a>
+              <a href="" class="link"></a>
             </div>
           </div>
         </div>
@@ -182,109 +180,227 @@
     <!-- expertise section ends here -->
 
     <!-- skill section starts -->
-    <section class="skill mt-5 py-5" id="about">
-      <div class="row justify-content-evenly">
-        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
-          <div class="row justify-content-evenly">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress html-css">
-                  <span class="progress-value html-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">HTML & CSS</span>
-              </div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Education, Skills & Experience</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #e0e0e0;
+            }
+            .container {
+                width: 75%;
+                margin: auto;
+                overflow: hidden;
+                background: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            }
+            .heading {
+                text-align: center;
+                margin: 40px 0;
+            }
+            .section {
+                background: #fafafa;
+                padding: 20px;
+                margin-bottom: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            h3, h4 {
+                color: #333;
+            }
+            .text-muted {
+                color: #666;
+            }
+            .download-btn {
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+            }
+            .c-btn {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                padding: 12px 24px;
+                border-radius: 50px;
+                font-size: 16px;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            .c-btn:hover {
+                background-color: #0056b3;
+            }
+            .skill {
+                margin-top: 50px;
+                padding: 50px 0;
+            }
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+            .progress-card {
+                text-align: center;
+                width: 45%;
+                margin-bottom: 20px;
+            }
+            .circular-progress {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background: conic-gradient(#007bff 0% 0%, #ddd 0% 100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                color: #333;
+                margin: auto;
+                position: relative;
+            }
+            .circular-progress::before {
+                content: "";
+                position: absolute;
+                width: 85%;
+                height: 85%;
+                background: white;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading">
+                <small>My Skills</small>
+                <h3>Technical Proficiency</h3>
             </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress javascript">
-                  <span class="progress-value javascript-progress">0%</span>
+            <section class="skill" id="about">
+                <div class="row">
+                    <div class="progress-card">
+                        <div class="circular-progress html-css" data-progress="90">
+                            <span class="progress-value">90%</span>
+                        </div>
+                        <br>
+                        <span class="text">HTML & CSS</span>
+                    </div>
+                    <div class="progress-card">
+                        <div class="circular-progress javascript" data-progress="85">
+                            <span class="progress-value">85%</span>
+                        </div>
+                        <br>
+                        <span class="text">JavaScript</span>
+                    </div>
+                    <div class="progress-card">
+                        <div class="circular-progress cloud" data-progress="80">
+                            <span class="progress-value">80%</span>
+                        </div>
+                        <br>
+                        <span class="text">Cloud Infrastructure</span>
+                    </div>
+                    <div class="progress-card">
+                        <div class="circular-progress reactjs" data-progress="95">
+                            <span class="progress-value">95%</span>
+                        </div>
+                        <br>
+                        <span class="text">ReactJS</span>
+                    </div>
                 </div>
-                <br />
-                <span class="text">JavaScript</span>
-              </div>
+            </section>
+            
+            <div class="heading">
+                <small>My Education</small>
+                <h3>Academic Background</h3>
             </div>
-          </div>
-          <div class="row justify-content-evenly mt-4">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress php">
-                  <span class="progress-value php-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">PHP</span>
-              </div>
+            
+            <div class="section">
+                <h4>UPES, Dehradun</h4>
+                <p class="text-muted">2022 — 2026 (Pursuing)</p>
+                <p>B.Tech CSE with specialization in Cloud Computing & Virtualization Technology</p>
             </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3  ms-md-0">
-                <div class="circular-progress reactjs">
-                  <span class="progress-value reactjs-progress">0%</span>
-                </div>
-                <br>
-                <span class="text">ReactJS</span>
-              </div>
+            
+            <div class="section">
+                <h4>Shiv Jyoti Convent School</h4>
+                <p class="text-muted">2021 — 2022</p>
+                <p>Higher Secondary School</p>
             </div>
-          </div>
+            
+            <div class="section">
+                <h4>St. Paul's Sr. Sec. School</h4>
+                <p class="text-muted">2019 — 2020</p>
+                <p>Secondary School</p>
+            </div>
+            
+            <div class="heading">
+                <small>My Experience</small>
+                <h3>Social Contributions & Work Experience</h3>
+            </div>
+            
+            <div class="section">
+                <h4>Social Internship at Shine India Foundation_SRIJAN Social Internship</h4>
+                <p class="text-muted">May 2023 — July 2023</p>
+                <ul>
+                    <li>Assisted in the coordination and execution of cornea transplant procedures to restore vision for patients.</li>
+                    <li>Worked closely with medical professionals to ensure proper handling and transplantation of donor corneas.</li>
+                </ul>
+            </div>
+            
+            <div class="download-btn">
+                <a href="Entry_Level_Web_Developer_Resume.pdf" download="SampleCV" class="c-btn">Download Resume</a>
+            </div>
         </div>
-        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
-          <div class="heading mt-5 mt-md-3">
-            <small>My Skills</small>
-            <h3>Beautiful & Unique Digital Experiences</h3>
-            <p class="text-muted">
-              Nostrum exercitationem ullam corporis suscipit laborioa nisi ut
-              aliquid exrea commodi consequatur magni dolores aos qui ratione
-              voluptatem nesciunt.
-            </p>
-            <p class="text-muted">
-              Quia voluptas sit aspernatur aut odit aut fugit, sed ruiano
-              consequntar magni dolores.
-            </p>
-            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-              <!-- here download attribute is used for adding download functionality to button  -->
-              <a
-                href="Entry Level Web Developer Resume.pdf"
-                download="SampleCV"
-                style="text-decoration: none;color: #fff;"
-                >Download CV</a
-              >
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const progressBars = document.querySelectorAll(".circular-progress");
+                progressBars.forEach((bar) => {
+                    let progress = bar.getAttribute("data-progress");
+                    bar.style.background = `conic-gradient(#007bff ${progress}%, #ddd ${progress}% 100%)`;
+                });
+            });
+        </script>
+    </body>
+    </html>
+    
     <!-- skill section end here -->
 
     <!-- portfolio section starts here -->
-    <section class="portfolio" id="portfolio">
+    <section class="Project" id="Project">
       <div class="heading text-center pt-5">
         <small>Creative Work</small>
-        <h3>Check My Portfolio</h3>
+        <h3>Check My Project</h3>
       </div>
 
       <div id="myBtnContainer" class="text-center mt-4">
         <!-- here we will create custom attribute using data- for filtering -->
-        <button class="filter-item" data-filter="all">All</button>
-        <button class="filter-item" data-filter="game">Game</button>
+        <button class="filter-item" data-filter="all"></button>
+        <!-- <button class="filter-item" data-filter="game">Game</button>
         <button class="filter-item" data-filter="webapp">Web App</button>
         <button class="filter-item" data-filter="website">Website</button>
-        <button class="filter-item" data-filter="brand">Brand</button>
+        <button class="filter-item" data-filter="brand">Brand</button> -->
       </div>
-      <div class="portfolio-body">
+      <div class="Project-body">
         <div class="row justify-content-evenly px-4">
           <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
             <div class="card">
-              <img src="images/2048game.png" class="card-img-top" alt="..." />
+              <img src="images/2bb.jpg" class="card-img-top" alt="..." />
               <div class="card-body text-center">
-                <h4 class="card-title">2048 Game</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Game</span
-                ><br />
-                <a href="#" class="link">Read More</a>
+                <h4 class="card-title">Karcoolie(In Work)</h4>
+                <span class="badge bg-secondary badge-pill">React</span>
+                <span class="badge bg-secondary badge-pill">Node.js</span>
+                <!-- <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br /> -->
+                <a href="#" class="link"></a>
               </div>
             </div>
           </div>
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <!-- <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
             <div class="card">
               <img
                 src="images/currency-converter.png"
@@ -361,11 +477,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- portfolio section ends here -->
 
     <!-- testimonial section starts  -->
-    <section class="testimonial mt-5 pt-5" id="testimonial">
+    <!-- <section class="testimonial mt-5 pt-5" id="testimonial">
       <div class="row justify-content-evenly">
         <div class="col-md-4 col-10" data-aos="slide-right">
           <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
@@ -373,9 +489,9 @@
         <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
           <div class="heading">
             <small>Testimonials</small>
-            <h3>Happy Clients Feedback</h3>
+            <h3>Happy Clients Feedback</h3> -->
             <!-- here we will use carousel element from bootstrap -->
-            <div
+            <!-- <div
               id="carouselExampleControls"
               class="carousel slide"
               data-bs-ride="carousel"
@@ -452,11 +568,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- testimonial ends here -->
 
     <!-- blog section starts -->
-    <section class="blog mt-5 pb-5" id="blog">
+    <!-- <section class="blog mt-5 pb-5" id="blog">
       <div class="heading text-center pt-5">
         <small>Latest News</small>
         <h3>Blog & Articles</h3>
@@ -524,7 +640,7 @@
               <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- here we will make modals if Read more link is clicked the modal will popup -->
         <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
@@ -744,6 +860,7 @@
         </div>
       </div>
     </section>
+  </div>
     <!-- blog section ends here -->
 
     <!-- contact section starts -->
@@ -759,7 +876,7 @@
               <i class="bi bi-geo-alt-fill"></i>
             </div>
             <div class="col-11">
-              <p>121 King Street Melbourne, 3000, Australia</p>
+              <p>9-c-10 Mahaveer Nagar 3RD Kota ,Raj.</p>
             </div>
           </div>
           <div class="row justify-content-evenly">
@@ -767,7 +884,7 @@
               <i class="bi bi-telephone-fill"></i>
             </div>
             <div class="col-11">
-              <p>+91 9527818693</p>
+              <p>+91 9414189320</p>
             </div>
           </div>
           <div class="row justify-content-evenly">
@@ -775,16 +892,16 @@
               <i class="bi bi-send-fill"></i>
             </div>
             <div class="col-11">
-              <p>codewithpawan@gmail.com</p>
+              <p>parvgupta257@gmail.com</p>
             </div>
           </div>
           <div class="row justify-content-evenly">
             <div class="col-1">
-              <i class="bi bi-globe-americas"></i>
+              <i class=""></i>
             </div>
-            <div class="col-11">
+            <!-- <div class="col-11">
               <p>codingpawan.com</p>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
@@ -849,22 +966,25 @@
         <div class="vr"></div>
         <a href="#service">Service</a>
         <div class="vr"></div>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#portfolio">Projects</a>
         <div class="vr"></div>
-        <a href="#blog">Blog</a>
-        <div class="vr"></div>
+        <!-- <a href="#blog">Blog</a>
+        <div class="vr"></div> -->
         <a href="#contact">Contact</a>
       </div>
       <div class="social-links mt-5" data-aos="fade-up">
-        <button href="" class="rounded-pill dribble">
-          <i class="bi bi-dribbble"></i>
+        <button class="rounded-pill github" onclick="window.location.href='https://github.com/parvgupta182';">
+          <i class="bi bi-github"></i>
         </button>
-        <button href="" class="rounded-pill whatsapp">
-          <i class="bi bi-whatsapp"></i>
+        
+        <button class="rounded-pill linkedin" onclick="window.location.href='https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit';">
+          <i class="bi bi-linkedin"></i>
         </button>
-        <button href="" class="rounded-pill behance">
-          <i class="bi bi-behance"></i>
+        
+        <button class="rounded-pill instagram" onclick="window.location.href='https://www.instagram.com/?hl=en';">
+          <i class="bi bi-instagram"></i>
         </button>
+        
       </div>
       <hr class="text-muted my-4" />
 
